@@ -5,6 +5,7 @@ Given an n x n grid containing only values 0 and 1, where 0 represents water and
 
 The distance used in this problem is the Manhattan distance: the distance between two cells (x0, y0) and (x1, y1) is |x0 - x1| + |y0 - y1|.
 
+!["As far from land as possible"](example.JPG?raw=true)
 
 ### Constraints:
 ```
