@@ -6,6 +6,14 @@ Given an n x n grid containing only values 0 and 1, where 0 represents water and
 The distance used in this problem is the Manhattan distance: the distance between two cells (x0, y0) and (x1, y1) is |x0 - x1| + |y0 - y1|.
 
 
+### Constraints:
+```
+1. n == grid.length
+2. n == grid[i].length
+3. 1 <= n <= 100
+4. grid[i][j] is 0 or 1
+```
+
 # Implementation 1 : Naive : Time Limit exceeded
 Calculate the min distance to land for each 0 cell, and return the furthest (max distance) from land as answer.
 
