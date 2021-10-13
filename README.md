@@ -1,6 +1,14 @@
 # As far from land as possible
+## https://leetcode.com/problems/as-far-from-land-as-possible
 
-# Implementation 1 : Naive
+Given an n x n grid containing only values 0 and 1, where 0 represents water and 1 represents land, find a water cell such that its distance to the nearest land cell is maximized, and return the distance. If no land or water exists in the grid, return -1.
+
+The distance used in this problem is the Manhattan distance: the distance between two cells (x0, y0) and (x1, y1) is |x0 - x1| + |y0 - y1|.
+
+
+# Implementation 1 : Naive : Time Limit exceeded
+Calculate the min distance to land for each 0 cell, and return the furthest (max distance) from land as answer.
+
 ```java
 class Solution {
     public int maxDistance(int[][] grid) {
